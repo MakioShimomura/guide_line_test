@@ -1,0 +1,30 @@
+{
+  "name": "guide_line_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint:html:fix": "npx prettier --write *.html",
+    "lint:css:fix": "prettier-stylelint-formatter --quiet --write '*.{css,scss}'",
+    "lint:js:fix": "eslint --fix '*.{js,ts,jsx,tsx}'"
+  },
+  "lint-staged": {
+    "*.html": "npm run lint:html:fix",
+    "*.{css,scss}": "npm run lint:css:fix",
+    "*.{js,jsx}": "npm run lint:js:fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
+    "prettier-stylelint-formatter": "^0.5.1-beta.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
