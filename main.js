@@ -1,3 +1,3 @@
-let test = 'test';
+let test = 'test'       ;
 
-test + 'test';
+                test +          'test';
